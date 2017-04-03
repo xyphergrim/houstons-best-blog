@@ -4,8 +4,9 @@
     <div class="page-header"><h1><%= blog.title %></h1></div>
     <img class="img-responsive center-block blog-img" src="<%= blog.image %>">
     <div class="well">
-        <%= blog.created.toDateString() %>
-        <p><%- blog.body %></p>  
+        <p id="date-p"><%= blog.created.toDateString() %></p>
+        <hr>
+        <p id="blog-body-p"><%- blog.body %></p>  
     </div>
     <a href="/blogs">Go Back</a>
     <!--<a class="ui orange basic button" href="/blogs/<= blog._id %>/edit">Edit</a>-->

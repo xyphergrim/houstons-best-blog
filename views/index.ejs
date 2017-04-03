@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+
+<div class="container">
+    <h1>Blog Under Construction</h1>
+    <a id="new-post-btn" class="btn btn-lg btn-primary" href="/blogs/new">New Post</a>
+        <% blogs.forEach(function(blog){ %>
+            <div class="panel panel-default" id="index-panel">
+                <div class="panel-heading">
+                    <h2 class="panel-title"><a href="/blogs/<%= blog._id %>"><%= blog.title %></a></h2>
+                </div>
+                <img class="img-responsive center-block blog-img" src="<%= blog.image %>">
+                <p id="body-substring"><%- blog.body.substring(0,100) %>...</p>
+            </div>
+        <% }); %>
+</div>
+
+<% include ./partials/footer %>

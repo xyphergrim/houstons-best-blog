@@ -1,0 +1,57 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    color: black;
+    letter-spacing: 1px;
+    padding-top: 70px;
+    /*Margin bottom by footer height*/
+    margin-bottom: 60px;
+    /*For using navbar-fixed-top*/
+    /*padding-top: 70px;*/
+    /*padding-bottom: 15px;*/
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    /*Set the fixed height of the footer here*/
+    height: 60px;
+}
+
+.container .text-muted {
+    margin: 15px 0;
+    color: #fff;
+}
+
+.panel-title {
+    text-align: center;
+}
+
+.blog-img {
+    max-height: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#new-post-btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#read-more {
+    display: inline-block;
+}
+
+#body-substring {
+    text-align: center;
+}
+
+#index-panel {
+    margin-bottom: 25px;
+}
